@@ -1,0 +1,10 @@
+.menu {
+    background-image: linear-gradient(to right, #e37c49, #d6642d);
+    height: 100vh;
+    width: 50px;
+    horiz-align: center;
+    vertical-align: top;
+}
+.menu account {
+    background-image: linear-gradient(to right, #e37c49, #d6642d);
+}
