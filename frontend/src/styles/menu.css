@@ -1,0 +1,31 @@
+.menu {
+    background-image: linear-gradient(to right, #e37c49, #e69c64);
+    height: 36px;
+    width: 100%;
+    display: flex;
+    gap:5px;
+    position: fixed;
+    padding-left:5px;
+    padding-right:5px;
+    justify-content: right;
+    top:0;
+}
+.menu button {
+    height:32px;
+    aspect-ratio: 1;
+    padding : 0;
+    align-self: center;
+    justify-self: center;
+    background-color: transparent;
+    border: none;
+}
+.menu button:hover i {
+    color: #d6d6d6;
+}
+.menu button i {
+    padding : 0;
+    line-height:1;
+    color: #ffffff;
+    font-size: 24px;
+    opacity: 1;
+}
