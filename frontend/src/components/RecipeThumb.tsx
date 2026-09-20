@@ -4,12 +4,13 @@ const RecipeThumb = (props: { footer: string | undefined; img: string | undefine
         <button className = "recipe-thumb">
             <div className="wrapper">
                 <img src = {props.img} alt = {props.name} />
+                <h1 className="name">{props.name}</h1>
                 <div className="overlay">
-                    <h1 className="name">{props.name}</h1>
                     <p className="description">{props.description}</p>
                     <p className="footer">{props.footer}</p>
+                </div>
             </div>
-        </div>
-    </button>)
+        </button>
+    )
 }
 export default RecipeThumb;

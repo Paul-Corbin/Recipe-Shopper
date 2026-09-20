@@ -1,0 +1,16 @@
+.signin {
+    position: fixed;
+    display:flex;
+    top:36px;
+    height: calc(100% - 36px);
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+.signin .wrapper {
+    background-color: #e6e6e6;
+    height: 90%;
+    width: 90%;
+    border-radius: 25px;
+}

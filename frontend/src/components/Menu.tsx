@@ -1,4 +1,9 @@
+import {useState} from "react";
+import {Signin} from "./Signin.tsx";
+
 const Menu = () => {
+    const [showSignin, setShowSignin] = useState(true);
+
     function MenuButton(props: any) {
         return (<button {...props} on={props.onClick}><i className={props.icon}/></button>)
     }
@@ -22,7 +27,7 @@ const Menu = () => {
     }
     function Login() {
         function onClick(){
-            console.log("Login clicked")
+            setShowSignin(!showSignin);
         }
         return (<MenuButton onClick={onClick} icon="bi bi-door-open-fill"/>);
     }
@@ -34,6 +39,7 @@ const Menu = () => {
                 <Lists/>
                 <Login/>
             </div>
+            {showSignin && <Signin/>}
         </>
     )
 }
